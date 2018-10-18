@@ -60,8 +60,8 @@ Segment t1 = new Segment($gridWidth, $gridWidth);
 Segment t2 = new Segment($gridWidth*2, $gridWidth);
 Segment t3 = new Segment($gridWidth*3, $gridWidth);
 
-
-
+float i = 0;
+float delta = .05;
 // Draw
 // *************************************************************************************************
 void draw() {
@@ -71,14 +71,24 @@ void draw() {
     if ($grid) { drawGrid($gridWidth); };
   
     // do stuff in draw loop for active mode. Otherwise use key presses
-    t1.setStartAngle(true);
-    t1.showStart();
+    //t1.setStartAngle(true);
+    i += delta;
+    if(i > PI/2) {
+     i = PI/2; 
+     delta = -1*delta; // make it negative
+    }
+    if (i<= 0) {
+      i = 0;
+      delta = -1*delta;
+    }
     
-    t2.setStartAngle(true);
-    t2.showStart();
-    
-    t3.setStartAngle(false);
-    t3.showStart();
+    t1.setCurrentAngle(i);
+    t1.showCurrent();
+
+    t2.setCurrentAngle(i);
+    t2.showCurrent();
    
+    t3.setCurrentAngle(i);
+    t3.showCurrent();
   }
 }
