@@ -14,14 +14,7 @@ class Segment
   float startAngle;
   float currentAngle; 
   float endAngle; 
-  float newLength;  // not sure I'm using this at all?
-  
-  // animation
-  boolean animating;
-  int frame;
-  int totalFrames;
-  float angleIncrement;
-
+  float newLength;  
   
   // constructor 
   // *************************************************************************************************
@@ -33,20 +26,11 @@ class Segment
     currentAngle = startAngle;
     endAngle = startAngle;
     newLength = segmentLength; 
-    
-    // animation
-    animating = false;
-    frame = 0;
   }
-
-  
-  // helper methods
-  // *************************************************************************************************
-  
   
   // Getters
   // *************************************************************************************************
-  float getStartAngle() {
+  float getStartAngle() {  
     return this.startAngle;  
   }
   
@@ -79,66 +63,7 @@ class Segment
     //https://www.desmos.com/calculator/mu1snong2u
     return 0.6714*angle*angle-1.0548*angle+sqrt(2);
   }
-  // *************************************************************************************************
   
-
-
-  // animation
-  // *************************************************************************************************
-  //void startAnimation() {
-  //  this.animating = true;
-  //  this.frame = 0;
-    
-  //  // calculate animation stuff
-  //  this.totalFrames = $fRate*Segment.animationDuration;
-  //  float angle = this.getEndAngle() - this.getStartAngle();   // not sure if correct... might be flipped?
-  //  this.angleIncrement = (angle/totalFrames);          // split the distance between start and end into equal parts
-  //}
-  
-  //void stopAnimation() {
-  //  this.animating = false;
-  //  this.animationCompleted();
-  //}
-  
-  //void animate() {
-  //  // with easing
-  //  //float d = abs(this.endAngle - this.currentAngle);
-  //  //if(animating && d < Segment.error) {
-  //  //  this.updateAnimation();
-  //  //} else if (d > Segment.error && animating) {
-  //  //  this.stopAnimation();
-  //  //}
-    
-  //  // how to do this without easing
-  //  if(this.frame <= this.totalFrames && this.animating) {
-  //    this.updateAnimation();
-  //  } else if(this.frame > this.totalFrames && this.animating) {
-  //    this.stopAnimation();
-  //  }
-  //}
-  
-  //void updateAnimation() {
-  //  // with easing
-  //  float a = this.currentAngle;
-  //  float targetAngle = this.endAngle;
-  //  float da = targetAngle - a;
-  //  a += da * Segment.easing;
-  //  this.currentAngle = a;
-    
-  //  // without easing
-  //  //this.currentAngle += this.angleIncrement;
-  //  this.frame++;
-  //}
-  
-  //void animationCompleted() {
-  //  // swap the angles after you finish the animation
-  //  float temp = this.endAngle;
-  //  this.endAngle = this.startAngle;
-  //  this.startAngle = temp;
-  //  this.currentAngle = this.startAngle;
-  //}
-  
-
   // Setters
   // *************************************************************************************************
     void setCurrentAngle(float a) {
@@ -177,9 +102,7 @@ class Segment
        startAngle = PI/2; // right 
       }
     }
-    // End Setters
-    // *************************************************************************************************
-
+    
 
     // Display methods
     // *************************************************************************************************
@@ -212,7 +135,6 @@ class Segment
         fill(255,0,0);
         ellipse(center.x,center.y,5,5);
       }
-      
     }
     
     void showEnd() {
@@ -229,9 +151,4 @@ class Segment
         ellipse(center.x,center.y,5,5);
       }
     }
-    
-    // End display methods
-    // *************************************************************************************************
-  
- 
 }

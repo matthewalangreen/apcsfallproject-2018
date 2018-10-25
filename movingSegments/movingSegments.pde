@@ -6,9 +6,8 @@ int[] $gridWidthArray = {10,20,50,100};
 int $gridWidthArrayIndex = 1;
 int $gridWidth = $gridWidthArray[$gridWidthArrayIndex]; //10, 20, 30, 50 for(600,600) canvas size
 boolean $grid = true;
-boolean $debug = false;
-boolean $looping = false;
-boolean $activeMode = true;
+boolean $debug = true;
+boolean $animating = false;
 int $fRate = 40; // 40 seems to be smoothest for animation
 int $strokeWeight = 3;
 int $borderWidth = 100;
@@ -30,7 +29,6 @@ void prepareAndCreateDirector(int newGridWidthArrayIndex) {
   println("gridWidth: " + $gridWidth);
   println("gridWidthArrayIndex: " + $gridWidthArrayIndex);
   
-  
   if ($grid) { drawGrid($gridWidth); }; // show grid
   
   calculateProperties();
@@ -47,35 +45,41 @@ void setup() {
   stroke(0);
   strokeWeight($strokeWeight);
   frameRate($fRate);
+  smooth(8);
 
   calculateProperties();
 
   if ($grid) { drawGrid($gridWidth); };
 
   director = new Director(); 
-  //director.showNext(); // show the first pattern on screen
 }
 
+// Test segments to show how $animating works
 Segment t1 = new Segment($gridWidth, $gridWidth);
 Segment t2 = new Segment($gridWidth*2, $gridWidth);
 Segment t3 = new Segment($gridWidth*3, $gridWidth);
 
+// used in demo animation
 float i = 0;
 float delta = .05;
+
+
 // Draw
 // *************************************************************************************************
 void draw() {
   
-  if($activeMode) {
+  // This is where you can start with building your animation code
+  // This does not involve easing (read about it: https://processing.org/examples/easing.html)
+  // and as such, its pretty clunky. You'll likely want to build a new
+  // animation algorithm
+  if($animating) {
     background(255);
     if ($grid) { drawGrid($gridWidth); };
-  
-    // do stuff in draw loop for active mode. Otherwise use key presses
-    //t1.setStartAngle(true);
+    
     i += delta;
     if(i > PI/2) {
      i = PI/2; 
-     delta = -1*delta; // make it negative
+     delta = -1*delta; // make it negative if it gets to the "end"
     }
     if (i<= 0) {
       i = 0;

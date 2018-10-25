@@ -1,8 +1,8 @@
 void keyPressed() {
-  // toggle $activeMode 
+  // toggle $animating 
   if(key == 'a') {
-    $activeMode = !$activeMode;
-    println("$activeMode: "+$activeMode);
+    $animating = !$animating;
+    println("$activeMode: "+$animating);
   }
   
   if(key == '1') {  // set grid size 10
@@ -35,19 +35,7 @@ void keyPressed() {
  }
  
  // toggle between "start" and "end" patterns
- // only works in "active" mode
-     if(key == 't') {
-       if(director.getShowing() == "start") {
-         director.setShowing("end");
-       } else {
-         director.setShowing("start");
-       }
-     }
-     
-     if(key == 's') {
-       director.shiftPatterns();
-     }
-     
+ // you'll want to $animating to be false for these to really work.
      if(key == 'n') {
        background(255);
        if ($grid) { drawGrid($gridWidth); };
@@ -55,6 +43,7 @@ void keyPressed() {
      }
  
 
+ // turn on some console print statements and visual elements
  if(key == 'd') {
   $debug = !$debug;
   if($debug) {
@@ -66,7 +55,7 @@ void keyPressed() {
  
 }
 
-// Helper functions
+// Helper method for string formatting
 void printD(String m, boolean t) {
   if (t) {
     println(m + ": on");
