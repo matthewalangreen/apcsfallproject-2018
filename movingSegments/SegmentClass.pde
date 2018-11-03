@@ -2,7 +2,6 @@ class Segment
 {
   // private data
   // *************************************************************************************************
-  static final int animationDuration = 1;
   static final boolean showBox = true;
   static final float easing = 0.1;
   static final float error = 0.005;
@@ -42,22 +41,23 @@ class Segment
     return this.currentAngle;  
   }
   
-  int getStartAngleBool() {
-    if ( ((PI/2)-error) < this.startAngle && this.startAngle < ((PI/2)+error) ) {
-      return 1; // learning right
-    } else {
-      return 0; // not leaning right
-    }
-  }
+  // Deprecated
+  //int getStartAngleBool() {
+  //  if ( ((PI/2)-error) < this.startAngle && this.startAngle < ((PI/2)+error) ) {
+  //    return 1; // learning right
+  //  } else {
+  //    return 0; // not leaning right
+  //  }
+  //}
   
-  int getEndAngleBool() {
-     if ( ((PI/2)-error) < this.endAngle && this.endAngle < ((PI/2)+error) ) {
-    // if (this.endAngle > (PI/3)) {
-      return 1; // learning right
-    } else {
-      return 0; // not leaning right
-    }
-  }
+  //int getEndAngleBool() {
+  //   if ( ((PI/2)-error) < this.endAngle && this.endAngle < ((PI/2)+error) ) {
+  //  // if (this.endAngle > (PI/3)) {
+  //    return 1; // learning right
+  //  } else {
+  //    return 0; // not leaning right
+  //  }
+  //}
   
   float getLength(float angle) {
     //https://www.desmos.com/calculator/mu1snong2u

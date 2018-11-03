@@ -8,10 +8,12 @@ class Director
   ArrayList<Pattern> patterns;
   ArrayList<Segment> segments; 
   String showing;
-  float startTime;
-  float currentTime;
   int startPatternIndex;
- 
+  
+  // Deprecated
+  //float startTime;
+  //float currentTime;
+  
   
   // constructor 
   // *************************************************************************************************
