@@ -94,7 +94,7 @@ void showEnd()
 ## API Reference — Pattern (Class)
 **Description** - *This is a generic class that creates patterns that follow symmetry rules demonstrated above. Instances of this class are not aware of either the Segment Class or the Director class. Patterns are mapped using a series of methods to an IntList() that tracks values as either 0 or 1. These integer values are then read by an instance of the Director class which contains an ArrayList of Pattern objects and an ArrayList of Segment objects.*
 
-<img src = "https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/combined.png" width = "700" />
+<img src = "https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/combined.png" width = "800" />
 
 **Instance Data**
 ```
