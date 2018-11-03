@@ -2,6 +2,8 @@
 The following library was built by @matthewalangreen as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
 ![Example](https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png)  ![Example](https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png)
 
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "250" />
+
 ## Motivation
 I’m in love with the work created by [Dave 🐝💣 — @beesandbombs](https://twitter.com/beesandbombs)). Rarely do I see one of his creations and feel capable of approximating it. I also tend to completely over-engineer E V E R Y T H I N G. He shared his [code](https://gist.github.com/beesandbombs/6e7a310b55fd7a1f1d9bb0788b96234f) with the note, “here’s the code for this. I don’t really understand how it works.” It proved too unruly for me too, so I thought, “Yep. I’m gonna build a library for this so I can make LOTS of these.”
 
