@@ -25,10 +25,10 @@ void keyPressed() {
     director.showNext();
   }
   
-  if(key == '5') {
-    background(255);
-    if ($grid) { drawGrid($gridWidth); };
-  }
+  //if(key == '5') {
+  //  background(255);
+  //  if ($grid) { drawGrid($gridWidth); };
+  //}
  
  if(key == 'g') {
   $grid = !$grid; 
