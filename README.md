@@ -63,7 +63,7 @@ $animating
 **Press the 'g' Key**
 *Toggles $grid on & off. You must press either the corresponding number key again (will generate new random pair of patterns) or 'n' to toggle to the next pattern before you'll see the grid status change.*
 
-<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/gridStatus.png"  width = "700" />
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/gridOff.png"  width = "250" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "120" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/gridOn.png"  width = "250" />  
 
 **Press the 'd' Key**
 *Toggles $debug on & off. Like with 'g' key you must press either 'n' or 1-4 again to see the change take effect*
