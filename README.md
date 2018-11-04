@@ -1,4 +1,4 @@
-# Moving Segments 
+# Moving Segments
 The following library was built by [@matthewalangreen](https://github.com/matthewalangreen) as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" /> <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.gif" width = "1000" />
@@ -335,25 +335,30 @@ void showSegments(String s)
 void showNext()
 ```
 
-## Contribute
-**AP Computer Science Students:**
+## RA AP Computer Science Fall Project Expectations
 
-**Your task:** Create animation methods in Segment Class and Director Class that will enable an animated transition from one pattern state to another.
+**Your task:**
 
-You must also add appropriate comments and additions to the README file documenting your work
+- Create animation methods that will enable an animated transition from one pattern state to another. Your solution should be applied to all segments in the pattern.
 
-This task will require making changes throughout the Segment and Director classes. I do not believe it will be necessary to change the Pattern class at all
+- Create additional key press options to use these methods or set up the sketch to run the animations automatically.
 
-You'll need to need to learn about easing: https://processing.org/examples/easing.html
+- Be sure to change the usage documentation (in the README) to explain how it works.
+
+- This task will require making changes throughout the Segment and Director classes. _You will not need to change the Pattern class._
+
+- Consider using "easing" to create a smooth animation. Learn more about it [here](https://processing.org/examples/easing.html)
 
 **Steps:**
 
 1. Login to [GitHub](https://github.com/) ([Sign Up](https://github.com/join) if you haven't already)
 2. Fork this repo: [https://github.com/riverpointacademy/apcsfallproject-2018](https://github.com/riverpointacademy/apcsfallproject-2018)
-3. Create branch named, "yourlastname"
-4. Checkout a copy of this branch. ___DO ALL OF YOUR WORK IN THIS BRANCH___
-5. Be sure to commit changes with clear and descriptive commit messages. Get in the habit of commiting code changes often.
-6. When you are ready to submit your work, create a pull request
+3. Add "matthewalangreen" as a Collaborator to your repo
+4. Checkout a copy of your fork and do your work. Be sure to commit changes with clear and descriptive commit messages. Get in the habit of committing code changes often.
+5. __You are encouraged to collaborate with classmates on this project.__
+6. Submit your project by sending me a WorkChat letting me know you are done.
+7. This project is due Monday, January 22nd by 2pm.
+8. You must complete this project to receive credit in the [course.](https://docs.google.com/document/d/1mzm1GeZODXGW1jzTI1MvCdr9f9ROGb2gd_Otwo69gbE/edit)
 
 
 ## Credits
