@@ -1,5 +1,5 @@
 # Moving Segments
-The following library was built by @matthewalangreen as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
+The following library was built by [@matthewalangreen](https://github.com/matthewalangreen) as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" />
 
@@ -7,14 +7,43 @@ The following library was built by @matthewalangreen as a way to support making 
 ## Motivation
 I’m in love with the work created by [Dave 🐝💣 — @beesandbombs](https://twitter.com/beesandbombs)). Rarely do I see one of his creations and feel capable of approximating it. I also tend to completely over-engineer E V E R Y T H I N G. He shared his [code](https://gist.github.com/beesandbombs/6e7a310b55fd7a1f1d9bb0788b96234f) with the note, “here’s the code for this. I don’t really understand how it works.” It proved too unruly for me too, so I thought, “Yep. I’m gonna build a library for this so I can make LOTS of these.”
 
-## Screenshots
-Include logo/demo screenshot etc.
+## Usage & Screenshots
+### Global Settings
+```
+// contains 4 values: {10, 20, 50, 100} these are the curated
+// grid sizes that create the best output
+$gridWidthArray
+```
+
+```
+// turns the grid on & off. True by default
+$grid
+```
+
+```
+// Turns debugging mode on. Some values will be written to
+// console when set to true. Center point of each segment is
+// also drawn.
+$debug
+```
+
+```
+// a way to toggle basic animation demonstration.
+$animating
+```
+
+### Key Press Functions
+
+**Press the '1' Key** *Screen draws a new random pattern of segments on the smallest grid size. See example*
+
+<img src="" width = "250" />
+
+**'1' Key**
+
+**'1' Key**
 
 ## Built with Processing.java
 Get version [3.4](https://processing.org/download/)
-
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 ## Installation
 1. Install Processing.java IDE for your platform. [Version 3.4](https://processing.org/download/) recommended
@@ -92,13 +121,15 @@ void showEnd()
 
 
 ## API Reference — Pattern (Class)
-**Description** - *This is a generic class that creates patterns that follow symmetry rules demonstrated above. Instances of this class are not aware of either the Segment Class or the Director class. Patterns are mapped using a series of methods to an IntList() that tracks values as either 0 or 1. These integer values are then read by an instance of the Director class which contains an ArrayList of Pattern objects and an ArrayList of Segment objects.*
+**Description** - *This is a generic class that creates patterns that follow symmetry rules demonstrated above. Instances of this class are not aware of either the Segment Class or the Director class. Patterns are mapped using a series of methods to an IntList() that tracks values as either 0 or 1. These integer values are then read by an instance of the Director class which contains an ArrayList of Pattern objects and an ArrayList of Segment objects.
+
+An example of a randomly generated pattern is shown below*
 
 <img src = "https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/combined.png" width = "800" />
 
 **Instance Data**
 ```
-IntList patternPositions;
+IntList patternPositions
 ```
 
 **Methods (misc.)**
@@ -190,9 +221,9 @@ IntList makePattern() {
 ## API Reference — Director (Class)
 **Description** *- A single instance of the Director class is created to manage all of the Segment objects and Pattern objects.*
 
-*The Director object is named thusly because it directs the action.  It is also intended to be the Class that controls each segments animation and state.*
+*The Director object is named thusly because it directs the action.  It is also intended to be the class that controls each segments animation and state.*
 
-*Animation is not yet implemented.*
+*Animation is not yet implemented at the class level.*
 
 **Instance Data**
 ```
@@ -270,14 +301,10 @@ void showSegments(String s)
 void showNext()
 ```
 
-
-## Usage
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
 ## Contribute
-**AP Computer Science Students**
+**AP Computer Science Students:**
 
-Task: Create animation methods in Segment Class and Director Class that will enable an animated transition from one pattern state to another.
+**Your task:** Create animation methods in Segment Class and Director Class that will enable an animated transition from one pattern state to another.
 
 You must also add appropriate comments and additions to the README file documenting your work
 
@@ -286,14 +313,8 @@ This task will require making changes throughout the Segment and Director classe
 You'll need to need to learn about easing: https://processing.org/examples/easing.html
 
 
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
-
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
-
-#### Anything else that seems useful
+Thank you [Dave 🐝💣 — @beesandbombs](https://twitter.com/beesandbombs)) for the amazing Processing art you create. I'm equal parts inspired and flabbergasted at the beauty of your work.
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
-
 MIT © [matthewalangreen](https://github.com/matthewalangreen)
