@@ -64,7 +64,7 @@ class Director
     }
     
     void addAllPatterns() {
-       for (int i = 0; i< 3; i++) {
+       for (int i = 0; i< 3; i++) { // change this to create more than two patterns
         patterns.add(new Pattern());
       }
     }
