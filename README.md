@@ -58,7 +58,7 @@ $animating
 **Press the 'n' Key**
 *Toggles between the to pattern states assigned to the segments when they are created and mapped. You create more than two patterns by editing the `addAllPatterns() method in the Director class. If you create more than two patterns, pressing 'n' repeatedly will cycle through all patterns and upon reaching the last pattern, it will start over at the first pattern.*
 
-<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n1.png"  width = "250" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "100" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n2.png"  width = "250" />  
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n1.png"  width = "250" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "120" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n2.png"  width = "250" />  
 
 **Press the 'g' Key**
 *Toggles $grid on & off. You must press either the corresponding number key again (will generate new random pair of patterns) or 'n' to toggle to the next pattern before you'll see the grid status change.*
@@ -68,10 +68,13 @@ $animating
 **Press the 'd' Key**
 *Toggles $debug on & off. Like with 'g' key you must press either 'n' or 1-4 again to see the change take effect*
 
-<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d1.png"  width = "250" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "100" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d2.png"  width = "250" />  
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d1.png"  width = "250" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "120" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d2.png"  width = "250" />  
 
 **Press the 's' Key**
 *Saves the current frame to disk as "#####.png"*
+
+**Press the 'a' Key**
+*Shows a demo animation. It's gross, but it gives you an idea of how segment data can be used to change state and control animation.*
 
 ## Built with Processing.java
 Get version [3.4](https://processing.org/download/)
