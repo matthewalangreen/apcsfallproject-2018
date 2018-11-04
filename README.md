@@ -11,7 +11,8 @@ I’m in love with the work created by [Dave 🐝💣 — @beesandbombs](https:/
 ### Global Settings
 ```
 // contains 4 values: {10, 20, 50, 100} these are the curated
-// grid sizes that create the best output
+// grid sizes that create the best output. This variable controls
+// most other animation settings.
 $gridWidthArray
 ```
 
@@ -34,7 +35,9 @@ $animating
 
 ### Key Press Functions
 
-**Press the '1' Key** *Screen draws a new random pattern of segments on the smallest grid size. See example*
+**Press the '1' Key**
+***
+*Screen draws a new random pattern of segments on the smallest grid size. See example:*
 
 <img src="" width = "250" />
 
