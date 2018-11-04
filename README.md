@@ -61,9 +61,17 @@ $animating
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n1.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "350" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/n2.png"  width = "350" />  
 
 **Press the 'g' Key**
-*Toggles the grid on & off. You must press either the corresponding number key again (will generate new random pair of patterns) or 'n' to toggle to the next pattern before you'll see the grid status change.*
+*Toggles $grid on & off. You must press either the corresponding number key again (will generate new random pair of patterns) or 'n' to toggle to the next pattern before you'll see the grid status change.*
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/gridStatus.png"  width = "700" />
+
+**Press the 'd' Key**
+*Toggles $debug on & off. Like with 'g' key you must press either 'n' or 1-4 again to see the change take effect*
+
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d1.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/arrow.png"  width = "350" /><img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/d2.png"  width = "350" />  
+
+**Press the 's' Key**
+*Saves the current frame to disk as "#####.png"*
 
 ## Built with Processing.java
 Get version [3.4](https://processing.org/download/)
