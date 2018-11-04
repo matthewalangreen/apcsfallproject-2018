@@ -55,6 +55,11 @@ $animating
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/4Key.png"  width = "350" />
 
+**Press the 'g' Key**
+*Toggles the grid on & off. You must press either the corresponding number key again (will generate new random pair of patterns) or 'n' to toggle to the next pattern before you'll see the grid status change.*
+
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/gridStatus.png"  width = "700" />
+
 ## Built with Processing.java
 Get version [3.4](https://processing.org/download/)
 
