@@ -3,6 +3,8 @@ The following library was built by [@matthewalangreen](https://github.com/matthe
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" />
 
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.gif" width = "1000" height = "625" />
+
 
 ## Motivation
 I’m in love with the work created by [Dave 🐝💣 — @beesandbombs](https://twitter.com/beesandbombs)). Rarely do I see one of his creations and feel capable of approximating it. I also tend to completely over-engineer E V E R Y T H I N G. He shared his [code](https://gist.github.com/beesandbombs/6e7a310b55fd7a1f1d9bb0788b96234f) with the note, “here’s the code for this. I don’t really understand how it works.” It proved too unruly for me too, so I thought, “Yep. I’m gonna build a library for this so I can make LOTS of these.”
