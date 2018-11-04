@@ -1,9 +1,7 @@
 # Moving Segments
 The following library was built by [@matthewalangreen](https://github.com/matthewalangreen) as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
 
-<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" />
-
-<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.gif" width = "1000" />
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" /> <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.gif" width = "1000" />
 
 
 ## Motivation
@@ -347,6 +345,15 @@ You must also add appropriate comments and additions to the README file document
 This task will require making changes throughout the Segment and Director classes. I do not believe it will be necessary to change the Pattern class at all
 
 You'll need to need to learn about easing: https://processing.org/examples/easing.html
+
+**Steps:**
+
+1. Login to [GitHub](https://github.com/) ([Sign Up](https://github.com/join) if you haven't already)
+2. Fork this repo: [https://github.com/riverpointacademy/apcsfallproject-2018](https://github.com/riverpointacademy/apcsfallproject-2018)
+3. Create branch named, "yourlastname"
+4. Checkout a copy of this branch. ___DO ALL OF YOUR WORK IN THIS BRANCH___
+5. Be sure to commit changes with clear and descriptive commit messages. Get in the habit of commiting code changes often.
+6. When you are ready to submit your work, create a pull request
 
 
 ## Credits
