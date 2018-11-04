@@ -1,4 +1,8 @@
 void keyPressed() {
+  if(key == 's') { // save frame to disk
+    saveFrame("#####.png");
+  }
+  
   // toggle $animating 
   if(key == 'a') {
     $animating = !$animating;

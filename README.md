@@ -36,14 +36,24 @@ $animating
 ### Key Press Functions
 
 **Press the '1' Key**
-***
 *Screen draws a new random pattern of segments on the smallest grid size. See example:*
 
-<img src="" width = "250" />
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/1Key.png"  width = "350" />
 
-**'1' Key**
+**Press the '2' Key**
+*Screen draws a new random pattern of segments on the smallest grid size. See example:*
 
-**'1' Key**
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/1Key.png"  width = "350" />
+
+**Press the '3' Key**
+*Screen draws a new random pattern of segments on the smallest grid size. See example:*
+
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/1Key.png"  width = "350" />
+
+**Press the '4' Key**
+*Screen draws a new random pattern of segments on the smallest grid size. See example:*
+
+<img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/1Key.png"  width = "350" />
 
 ## Built with Processing.java
 Get version [3.4](https://processing.org/download/)
