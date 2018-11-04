@@ -1,4 +1,4 @@
-# Moving Segments -- Matt-Demo branch changes
+# Moving Segments 
 The following library was built by [@matthewalangreen](https://github.com/matthewalangreen) as a way to support making animated, procedural drawings inspired by [this](https://twitter.com/beesandbombs/status/1019924265540431872) and [this](https://www.youtube.com/watch?v=bEyTZ5ZZxZs&t=1s). The current version supports drawing individual segments, presenting them on screen and generating randomized patterns that possess various lines of symmetry
 
 <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/example.png"  width = "350" />  <img src="https://raw.githubusercontent.com/riverpointacademy/apcsfallproject-2018/master/images/symmetry.png"  width = "350" />
