@@ -169,6 +169,9 @@ class Director
   
   // show next pattern in list
   void showNext() {
+    if (makeSVG) {
+   beginRecord(SVG, "frame-####.svg"); 
+   }
     shiftPatterns(); // go to the next pattern
     pushMatrix();
     translate($borderWidth,$borderWidth);
@@ -177,6 +180,10 @@ class Director
         showing = "start";
     }
     popMatrix();
+     if (makeSVG) {
+     endRecord();
+     makeSVG = false;
+  }
   }
     
 }

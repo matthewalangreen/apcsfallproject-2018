@@ -1,3 +1,6 @@
+import processing.svg.*;
+boolean makeSVG; // to track state
+
 // Inspired By: https://twitter.com/beesandbombs/status/1019924265540431872
 
 // Globals
@@ -5,7 +8,7 @@
 int[] $gridWidthArray = {10,20,50,100};
 int $gridWidthArrayIndex = 1;
 int $gridWidth = $gridWidthArray[$gridWidthArrayIndex]; //10, 20, 30, 50 for(600,600) canvas size
-boolean $grid = true;
+boolean $grid = false;
 boolean $debug = false;
 boolean $animating = false;
 int $fRate = 40; // 40 seems to be smoothest for animation
@@ -67,6 +70,9 @@ float delta = .05;
 // Draw
 // *************************************************************************************************
 void draw() {
+  //if (makeSVG) {
+  // beginRecord(SVG, "frame-####.svg"); 
+  //}
   
   // This is where you can start with building your animation code
   // This does not involve easing (read about it: https://processing.org/examples/easing.html)
@@ -95,4 +101,13 @@ void draw() {
     t3.setCurrentAngle(i);
     t3.showCurrent();
   }
+  
+  //if (makeSVG) {
+  // endRecord();
+  // makeSVG = false;
+  //}
+}
+
+void mousePressed() {
+  makeSVG = true; 
 }
